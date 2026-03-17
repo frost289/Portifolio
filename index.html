@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portifolio</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div>ALIFORCE</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="menu">
+        <li><a href="#projects">PROJECTS</a></li>
+        <li ><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+
+      <div class="ali">Open to opportunities</div>
+    </nav>
+    <section class="hero">
+      <div class="herocontent">
+        <h1 class="hero name">Aliforce
+        <span >Biziman</span>
+        </h1>
+
+        <p class="hero-role">
+          <span id="typed-text"></span><span class="cursor"></span>
+            </p>
+        <div class="title"></div>
+        <p >Building things for the web — one commit at a time.
+          Currently studying at Mzuzu University, learning React & React Native, and turning coffee into functional interfaces. </p>
+        <a href="#projects " class="projects">View Projects</a>
+        <a href="#contact" class="contact">Get in Touch</a>
+      </div>
+      <img src="src/assets/hero.png" alt="profile picture" class="hero-image" />
+    </section>
+
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="src/assets/javascript.svg" alt="Project 1" class="project-image" />
+          <h3 class="project-title">Project One</h3>
+          <p class="project-description">A web application that allows users to track their tasks and manage their time effectively.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="src/assets/javascript.svg" alt="Project 2" class="project-image" />
+          <h3 class="project-title">Project Two</h3>
+          <p class="project-description">A mobile app that helps users find nearby restaurants and make reservations easily.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- ABOUT -->
+<section id="about">
+  <div class="section-label fade-in">About</div>
+  <h2 class="section-title fade-in">Who I am</h2>
+  <div class="about-grid">
+    <div class="about-text fade-in">
+      <p>I'm a <strong>Education(ICT) student at Mzuzu University</strong>, Malawi. I've always been curious about how software works under the hood — and more importantly, how it can solve real problems for real people.</p>
+      <p>I started with <strong>Java and Python</strong> through my coursework, then taught myself HTML, CSS, and JavaScript because I wanted to see my ideas come alive in the browser. Now I'm leveling up with <strong>React and React Native</strong> to build proper cross-platform apps.</p>
+      <p>I'm the kind of developer who breaks things first and figures out why later. I believe building is the best way to learn — every bug is a lesson, every project a stepping stone.</p>
+      <p>When I'm not coding, I'm probably explaining something to a classmate, reading about new tech, or brainstorming the next thing to build.</p>
+    </div>
+    <div class="terminal-box fade-in">
+      <div class="terminal-top">
+        <div class="term-dot r"></div>
+        <div class="term-dot y"></div>
+        <div class="term-dot g"></div>
+        <span class="terminal-title">~ profile.json</span>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">cat profile.json</span></div>
+        <div class="t-line">&nbsp;</div>
+        <div class="t-line t-output">{</div>
+        <div class="t-line t-output">&nbsp;&nbsp;"name": <span class="t-blue">"Aliforce Biziman"</span>,</div>
+        <div class="t-line t-output">&nbsp;&nbsp;"location": <span class="t-blue">"Mzuzu, Malawi"</span>,</div>
+        <div class="t-line t-output">&nbsp;&nbsp;"uni": <span class="t-blue">"Mzuzu University"</span>,</div>
+        <div class="t-line t-output">&nbsp;&nbsp;"status": <span class="t-yellow">"Student &amp; Builder"</span>,</div>
+        <div class="t-line t-output">&nbsp;&nbsp;"currently": <span class="t-blue">"Learning React"</span>,</div>
+        <div class="t-line t-output">&nbsp;&nbsp;"open_to": <span class="t-yellow">"Internships"</span>,</div>
+        <div class="t-line t-output">&nbsp;&nbsp;"coffee": <span class="t-blue">true</span></div>
+        <div class="t-line t-output">}</div>
+        <div class="t-line">&nbsp;</div>
+        <div class="t-line"><span class="t-prompt">$ </span><span class="cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label fade-in">Contact</div>
+    <h2 class="section-title fade-in">Let's connect</h2>
+    <p class="fade-in" style="font-size:0.85rem;color:var(--muted);margin-bottom:1.5rem;line-height:1.8;">
+      I'm open to internships, collaborations, and any interesting conversations about tech. Drop a message — I reply fast.
+    </p>
+    <a class="contact-email fade-in" href="mailto:bizimanaliforce@email.com">bizimanaliforce@email.com</a>
+    <div class="social-links fade-in">
+      <a class="social-link" href="https://github.com/frost289">⟨/⟩ GitHub</a>
+      <a class="social-link" href="#">in LinkedIn</a>
+      <a class="social-link" href="#">𝕏 Twitter</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>Designed &amp; built by Aliforce Biziman· Mzuzu, Malawi</span>
+  <span style="color:var(--accent);">Always learning. Always building.</span>
+</footer>
+
+<script>
+  // Typing animation
+  const roles = [
+    'Frontend Developer',
+    'EDUICT Student @ MzUni',
+    'JavaScript Enthusiast',
+    'React Learner',
+    'Problem Solver'
+  ];
+  let ri = 0, ci = 0, deleting = false;
+  const el = document.getElementById('typed-text');
+
+  function type() {
+    const word = roles[ri];
+    if (!deleting) {
+      el.textContent = word.slice(0, ci + 1);
+      ci++;
+      if (ci === word.length) { 
+        deleting = true; 
+        setTimeout(type, 1800); 
+        return 0; }
+    } else {
+      el.textContent = word.slice(0, ci - 1);
+      ci--;
+      if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
+    }
+    setTimeout(type, deleting ? 60 : 100);
+  }
+  type();
+
+  // Scroll animations
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+</script>
+
+
+
+
+
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
