@@ -79,6 +79,13 @@ nav div {
   gap: 2rem;  
 }
 
+.hero-image {
+  width: 100%;
+  border-radius: 8px;
+  opacity: 0.5;
+
+}
+
 
 .cursor {
     display: inline-block; width: 2px; height: 1.2em;
